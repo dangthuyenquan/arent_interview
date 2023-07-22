@@ -1,0 +1,128 @@
+#header {
+    height: 64px;
+    background: var(--bgBrown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+}
+
+#header .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#header .logo {
+    width: 109px;
+}
+
+#header .navi {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#header .navi ul {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#header .navi ul li,
+#header .navi ul li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--textContrast);
+    width: 160px;
+    font-size: 16px;
+}
+
+#header .navi ul li .icon {
+    width: 32px;
+    height: 32px;
+}
+
+#header .menu-toggle {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#header .menu-toggle span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: var(--secondary);
+}
+
+#header .menu-toggle::before,
+#header .menu-toggle::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 26px;
+    height: 3px;
+    top: 8px;
+    background: var(--secondary);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#header .menu-toggle::after {
+    top: unset;
+    bottom: 7px;
+}
+
+#header .menu-toggle.active {
+    transition: all 0.3s;
+}
+
+#header .menu-toggle.active span {
+    display: none;
+}
+
+#header .menu-toggle.active:before {
+    transform: rotate(45deg) translateY(10px);
+    transition: all 0.3s;
+}
+
+#header .menu-toggle.active:after {
+    transform: rotate(-45deg) translateY(-10px);
+    transition: all 0.3s;
+}
+
+#header .menu-popup {
+    position: absolute;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 40px;
+    gap: 0;
+    background: #777777;
+}
+
+
+.menu-popup a {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    width: 100%;
+    color: var(--textContrast);
+    padding: 23px 32px;
+    box-sizing: border-box;
+    background: #777777;
+    border-bottom: 1px solid #646464;
+    border-top: 1px solid #8b8b8b;
+}
+
+.menu-popup a:hover {
+    opacity: 0.8;
+}

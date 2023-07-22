@@ -1,0 +1,76 @@
+.my-record-filter {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.my-record-item {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    padding: 24px;
+    background: var(--colorLable);
+    cursor: pointer;
+}
+
+.my-record-item .bg {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.my-record-item .bg::after {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.my-record-item .my-record-item_content {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.my-record-item .bg img {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(1);
+}
+
+.my-record-item .title {
+    font-size: 25px;
+    color: var(--colorLable);
+    font-family: Inter;
+}
+
+.my-record-item .des {
+    font-size: 14px;
+    background: var(--secondary);
+    display: inline-block;
+    width: 160px;
+    line-height: 24px;
+    text-align: center;
+}

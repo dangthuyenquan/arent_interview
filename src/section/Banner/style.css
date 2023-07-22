@@ -1,0 +1,56 @@
+.banner {
+    height: 312px;
+    display: flex;
+}
+
+.banner .banner_left {
+    overflow: hidden;
+    width: 540px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.banner_left .circle_precent {
+    width: 181px;
+    height: 181px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 2px solid white;
+    color: var(--textContrast);
+    font-family: 'Inter';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner_left .circle_precent .date {
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.banner_left .circle_precent .precent {
+    font-size: 25px;
+}
+
+.banner .banner_left img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner .banner_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2E2E2E;
+    width: 100%;
+    padding: 16px 24px;
+}

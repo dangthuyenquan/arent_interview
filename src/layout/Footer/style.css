@@ -1,0 +1,20 @@
+#footer {
+    background: var(--bgBrown);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 128px;
+    margin-top: 64px;
+    position: relative;
+}
+
+#footer ul {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+
+#footer ul li a {
+    color: var(--textContrast);
+    font-size: 11px;
+}

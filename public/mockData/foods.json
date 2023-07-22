@@ -1,0 +1,42 @@
+[
+    {
+      "type": "Morning",
+      "labelType": "05.21.MORNING",
+      "thumbnail": "/img/m01.jpg"
+    },
+    {
+      "type": "Lunch",
+      "labelType": "05.21.LUNCH",
+      "thumbnail": "/img/l03.jpg"
+    },
+    {
+      "type": "Dinner",
+      "labelType": "05.21.DINNER",
+      "thumbnail": "/img/d01.jpg"
+    },
+    {
+      "type": "Snack",
+      "labelType": "05.21.SNACK",
+      "thumbnail": "/img/l01.jpg"
+    },
+    {
+      "type": "Morning",
+      "labelType": "05.21.MORNING",
+      "thumbnail": "/img/m01.jpg"
+    },
+    {
+      "type": "Lunch",
+      "labelType": "05.20.LUNCH",
+      "thumbnail": "/img/l02.jpg"
+    },
+    {
+      "type": "Dinner",
+      "labelType": "05.20.DINNER",
+      "thumbnail": "/img/d02.jpg"
+    },
+    {
+      "type": "Snack",
+      "labelType": "05.21.SNACK",
+      "thumbnail": "/img/s01.jpg"
+    }
+  ]

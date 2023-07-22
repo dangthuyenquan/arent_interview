@@ -1,0 +1,43 @@
+.food-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.food-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.food-item img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.food-item .food-lable {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--colorLable);
+    font-family: Inter;
+    min-width: 120px;
+    padding: 8px;
+    font-size: 15px;
+    color: var(--textContrast);
+    text-transform: uppercase;
+}
+
+.load-more {
+    padding-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

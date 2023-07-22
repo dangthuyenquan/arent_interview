@@ -1,0 +1,84 @@
+.exercise {
+    background: var(--bgBrown);
+    padding: 16px 24px;
+    color: var(--textContrast);
+    margin-top: 56px;
+}
+
+.exercise-list {
+    height: 192px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 8px;
+    margin-top: 8px;
+    padding-right: 40px;
+}
+
+.exercise-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.exercise-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey;
+    border-radius: 3px;
+    background: #777777;
+}
+
+/* Handle */
+.exercise-list::-webkit-scrollbar-thumb {
+    background: var(--colorLable);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.exercise-list::-webkit-scrollbar-thumb:hover {
+    background: #ffc70f;
+}
+
+
+.exercise-item {
+    border-bottom: 1px solid #777777;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4px;
+}
+
+.my-exercise_title {
+    font-size: 15px;
+    font-family: Inter;
+    display: flex;
+    gap: 32px;
+}
+
+.my-exercise_title h2 {
+    font-size: 15px;
+    line-height: 18px;
+    font-family: Inter;
+}
+
+.my-exercise_title span {
+    font-size: 22px;
+    font-family: Inter;
+}
+
+.exercise-item .exercise-left {}
+
+.exercise-item h4 {
+    font-size: 15px;
+    letter-spacing: 0.08px;
+}
+
+.exercise-item .kcal {
+    font-size: 15px;
+    color: var(--colorLable);
+    font-family: Inter;
+}
+
+.exercise-item .exercise-right {
+    font-size: 18px;
+    color: var(--colorLable);
+    font-family: Inter;
+}

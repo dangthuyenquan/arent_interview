@@ -1,0 +1,49 @@
+.recommend-filter {
+    display: flex;
+    gap: 32px;
+    margin-top: 56px;
+}
+
+.filter-item {
+    width: 100%;
+    padding: 24px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background: #2E2E2E;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.filter-item:hover {
+    opacity: 0.8;
+}
+
+.filter-item .title {
+    color: var(--colorLable);
+    font-size: 22px;
+    position: relative;
+    line-height: 27px;
+    text-align: center;
+    font-family: 'Inter';
+}
+
+.filter-item .title::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 56px;
+    height: 2px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+}
+
+.filter-item .des {
+    color: var(--textContrast);
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+}
