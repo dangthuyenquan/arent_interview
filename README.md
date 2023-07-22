@@ -1,4 +1,4 @@
-# Remitano Interview
+# Arent Interview
 # I Introduction
 
 The project is the result of a recruitment interview conducted by Arent company, aiming to assess candidates' technical skills, testing abilities, and more.
