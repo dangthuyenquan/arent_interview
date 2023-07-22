@@ -38,6 +38,7 @@
     color: var(--textContrast);
     width: 160px;
     font-size: 16px;
+    position: relative;
 }
 
 #header .navi ul li .icon {
@@ -92,7 +93,20 @@
     transform: rotate(45deg) translateY(10px);
     transition: all 0.3s;
 }
-
+#header .navi li .babel{
+    position: absolute;
+    top: -8px;
+    background-color: #EA6C00;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    line-height: 16px;
+    font-family: 'Inter';
+    left: 24px;
+}
 #header .menu-toggle.active:after {
     transform: rotate(-45deg) translateY(-10px);
     transition: all 0.3s;
